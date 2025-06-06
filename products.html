@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-overall">
+
+    <header class="main-header">
+        <div class="logo">Tech<span>Shop</span></div>
+        <div class="nav-icons">
+            <div class="icon-container">
+                <i class="fas fa-search icon"></i>
+                <div class="search-box">
+                    <input type="text" placeholder="Search for products...">
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-shopping-cart icon"></i>
+                <div class="cart-box">
+                    <h3>Your Cart</h3>
+                    <p>Your cart is currently empty.</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-user icon"></i>
+                <div class="signup-box">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="gallery-container">
+        <div class="thumbnail-column">
+            <input type="radio" name="thumbnail-select" id="thumb1" class="thumbnail-selector" checked>
+            <label for="thumb1" class="thumbnail">
+                <img src="/Tech Shop/boat131-1.png" alt="Thumbnail 1">
+            </label>
+            
+            <input type="radio" name="thumbnail-select" id="thumb2" class="thumbnail-selector">
+            <label for="thumb2" class="thumbnail">
+                <img src="/Tech Shop/boat131-2.png" alt="Thumbnail 2">
+            </label>
+            
+            <input type="radio" name="thumbnail-select" id="thumb3" class="thumbnail-selector">
+            <label for="thumb3" class="thumbnail">
+                <img src="/Tech Shop/boat131-3.png" alt="Thumbnail 3">
+            </label>
+            
+            <input type="radio" name="thumbnail-select" id="thumb4" class="thumbnail-selector">
+            <label for="thumb4" class="thumbnail">
+                <img src="/Tech Shop/boat131-4.png" alt="Thumbnail 4">
+            </label>
+        </div>
+        
+        
+        <div class="main-image-container">
+            <img src="/Tech Shop/boat131-1.png" id="mainImage1" class="main-image" alt="Main Product Image 1">
+            <img src="/Tech Shop/boat131-2.png" id="mainImage2" class="main-image" alt="Main Product Image 2">
+            <img src="/Tech Shop/boat131-3.png" id="mainImage3" class="main-image" alt="Main Product Image 3">
+            <img src="/Tech Shop/boat131-4.png" id="mainImage4" class="main-image" alt="Main Product Image 4">
+        </div>
+
+
+        <div class="product-info-container">
+            <h1 class="product-title">boAt Airdopes 131</h1>
+            <h3 class="product-subtitle">Wireless In-Ear Earbuds</h3>
+            <div class="product-rating">
+                ★★★★☆ <span class="review-count">(128 Reviews)</span>
+                <div class="divider"></div>
+            </div>
+            <div class="product-price">
+                ₹1,999
+                <span class="original-price">₹2,999</span>
+                <div class="save-info">
+                    <span class="discount-text">You save ₹1000 (10% off)</span>
+                    <span><button class="in-stock-button"> ✔instock</button></span>
+                </div>
+                <div class="tax-info">(Inclusive of all taxes)</div>
+            </div>
+            <div class="divider"></div>
+            <div><h2 class="offers-title">Offers and Discounts</h2>
+            </div>
+            <div class="payment-options">
+                <label for="Payments"></label>
+                <input type="text" id="Payments" placeholder="No Cost EMI on Credit Card" >
+                <label for="payment"></label>
+                <input type="text" id="payment" placeholder="Pay Later & Avail Cashback">
+            </div>
+
+            <button class="add-to-cart-button">
+                <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Add to Cart
+            </button>
+        </div>
+    </div>
+    <div class="specifications-section">
+        <div class="spec-buttons">
+            <button class="spec-button active">Specifications</button>
+            <button class="spec-button">Overview</button>
+            <button class="spec-button">Reviews</button>
+        </div>
+
+        <div class="spec-table-container">
+            <table class="spec-table">
+                <tr>
+                    <td class="spec-label">Brand</td>
+                    <td class="spec-value">boAT</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Model</td>
+                    <td class="spec-value">boAt 131</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Generic Name</td>
+                    <td class="spec-value">Headphones</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Headphone Type</td>
+                    <td class="spec-value">Over Ear</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Connectivity</td>
+                    <td class="spec-value">Wireless</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Microphone</td>
+                    <td class="spec-value">Yes</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <section class="advantages">
+    <h1 class="advantages-title">Our Advantages</h1>
+    <div class="advantage-items">
+        
+        <div class="advantage-item">
+            <i class="fas fa-shipping-fast"></i>
+            <div>
+                <h5 class="advantage-heading">Express Delivery</h5>
+                <p class="advantage-text">Get your products delivered within 24 hours</p>
+            </div>
+        </div>
+
+        <div class="advantage-item">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+                <h5 class="advantage-heading">Brand Warranty</h5>
+                <p class="advantage-text">All products come with manufacturer warranty</p>
+            </div>
+        </div>
+
+        <div class="advantage-item">
+            <i class="fas fa-tag"></i>
+            <div>
+                <h5 class="advantage-heading">Exciting Deals</h5>
+                <p class="advantage-text">Regular discounts and special offers</p>
+            </div>
+        </div>
+
+        <div class="advantage-item">
+            <i class="fas fa-lock"></i>
+            <div>
+                <h5 class="advantage-heading">Secure Payments</h5>
+                <p class="advantage-text">100% secure and encrypted payment methods</p>
+            </div>
+        </div>  
+
+    </div>
+</section>
+<section class="top-products">
+    <h2 class="section-title">Related Products</h2>
+    
+    
+    
+    <div class="product-grid">
+        <div class="product">
+            <img src="/Tech Shop/boat131-2.png" alt="Product 1">
+            <div class="product-details">
+                <div class="product-rating-stars">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                <h3 class="product-name">boAt Earbuds</h3>
+                <p class="product-description">Wireless In-Ear Earbuds</p>
+                <div class="product-price-info">
+                    <span class="current-price">₹1,499</span>
+                    <span class="old-price">₹2,999</span>
+                    <span class="discount-percentage">50% off</span>
+                </div>
+            </div>
+            <button class="add-to-cart-button-small">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="/Tech Shop/jbl100-1.png" alt="Product 2">
+            <div class="product-details">
+                <div class="product-rating-stars">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    
+                </div>
+                <h3 class="product-name">Jbl 100 buds</h3>
+                <p class="product-description">Wireless Bluetooth Earbuds</p>
+                <div class="product-price-info">
+                    <span class="current-price">₹2,299</span>
+                    <span class="old-price">₹3,999</span>
+                    <span class="discount-percentage">42% off</span>
+                </div>
+            </div>
+            <button class="add-to-cart-button-small">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="jbl760nc-3.png" alt="Product 3">
+            <div class="product-details">
+                <div class="product-rating-stars">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    
+                </div>
+                <h3 class="product-name">Jbl 760nc Headphones</h3>
+                <p class="product-description">Noise Cancelling Wireless</p>
+                <div class="product-price-info">
+                    <span class="current-price">₹1,799</span>
+                    <span class="old-price">₹2,999</span>
+                    <span class="discount-percentage">40% off</span>
+                </div>
+            </div>
+            <button class="add-to-cart-button-small">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="boat255r-2.png" alt="Product 4">
+            <div class="product-details">
+                <div class="product-rating-stars">
+                    <span>★</span>
+                    <span>★</span>
+                    
+                </div>
+                <h3 class="product-name">boAt 255 Earphones</h3>
+                <p class="product-description">Wired in-ear with Mic</p>
+                <div class="product-price-info">
+                    <span class="current-price">₹999</span>
+                    <span class="old-price">₹1,799</span>
+                    <span class="discount-percentage">44% off</span>
+                </div>
+            </div>
+            <button class="add-to-cart-button-small">Add to Cart</button>
+        </div>
+        
+</section>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">TechShop</h3>
+                <p class="footer-description">Your one-stop shop for all tech gadgets and accessories.</p>
+                <label for="email" class="sr-only">E-mail Address</label>
+                <input type="email" id="email" name="email" placeholder="E-mail Address" class="email-input">
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Help</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Cancel Order</a></li>
+                    <li><a href="#">Return Order</a></li>
+                    <li><a href="#">Warranty Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Policies</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="./home.html">Affiliates</a></li>
+                    <li><a href="./product.html">Service Centres</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom-divider"></div>
+            <div class="copyright">&copy; 2025 TechShop. All Rights Reserved.</div>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
