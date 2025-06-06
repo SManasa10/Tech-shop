@@ -9,29 +9,51 @@
 </head>
 <body class="body-overall">
 
-    <header class="main-header">
-        <div class="logo">Tech<span>Shop</span></div>
+    
+    <header>
+        <div class="logo">
+            <a href="#">Tech<span>Shop</span></a>
+        </div>
         <div class="nav-icons">
             <div class="icon-container">
-                <i class="fas fa-search icon"></i>
+                <a href="#"><i class="fas fa-search"></i></a>
                 <div class="search-box">
-                    <input type="text" placeholder="Search for products...">
+                    <input type="text" placeholder="Search for items...">
                 </div>
             </div>
+
             <div class="icon-container">
-                <i class="fas fa-shopping-cart icon"></i>
-                <div class="cart-box">
-                    <h3>Your Cart</h3>
-                    <p>Your cart is currently empty.</p>
-                </div>
+                <a href="cart.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
             </div>
+
             <div class="icon-container">
-                <i class="fas fa-user icon"></i>
-                <div class="signup-box">
+                <a href="#user-box" class="user-icon"><i class="fas fa-user"></i></a>
+                <div id="user-box" class="hover-box">
+                    <h2>Hello!</h2>
+                    <p>Access your account to manage your orders.</p>
+                    <a href="#signup-modal" class="login-btn">Login</a>
+                    <p class="signup-prompt">Please login or <a href="#signup-modal">create account</a></p>
                 </div>
             </div>
         </div>
+
+        <div id="signup-modal" class="signup-modal">
+            <div class="signup-content">
+                <a href="#" class="close-btn">&times;</a>
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
     </header>
+
     <div class="gallery-container">
         <div class="thumbnail-column">
             <input type="radio" name="thumbnail-select" id="thumb1" class="thumbnail-selector" checked>
