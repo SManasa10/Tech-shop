@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./cart.css">
+ </head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Tech<span>Shop</span></a>
+        </div>
+        <div class="nav-icons">
+            <div class="icon-container">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <div class="search-box">
+                    <input type="text" placeholder="Search for items...">
+                </div>
+            </div>
+
+            <div class="icon-container">
+                <a href="cart.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+
+            <div class="icon-container">
+                <a href="#user-box" class="user-icon"><i class="fas fa-user"></i></a>
+                <div id="user-box" class="hover-box">
+                    <h2>Hello!</h2>
+                    <p>Access your account to manage your orders.</p>
+                    <a href="#signup-modal" class="login-btn">Login</a>
+                    <p class="signup-prompt">Please login or <a href="#signup-modal">create account</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="signup-modal" class="signup-modal">
+            <div class="signup-content">
+                <a href="#" class="close-btn">&times;</a>
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page-content">
+        <div class="container">
+            <div class="cart">
+                <h3>Shopping Cart</h3>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="assets\images\products\jbl760nc-3.png" alt="JBL Live 660NC">
+                        <div class="item-details">
+                            <div class="item-header">
+                                <h4>JBL Live 660NC Wireless</h4>
+                                <button class="delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <p><span class="price">₹8,999</span> <span class="original-price">₹11,999</span></p>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span class="item-quantity">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="assets\images\products\boat131-3.png" alt="boAt Rockerz 518">
+                        <div class="item-details">
+                            <div class="item-header">
+                                <h4>boAt Rockerz 518</h4>
+                                <button class="delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <p><span class="price">₹1,299</span> <span class="original-price">₹3,990</span></p>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span class="item-quantity">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="assets\images\products\sony1000xm4-1.png" alt="Sony Headphones">
+                        <div class="item-details">
+                            <div class="item-header">
+                                <h4>Sony WH-1000XM4</h4>
+                                <button class="delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <p><span class="price">₹3,999</span> <span class="original-price">₹4,999</span></p>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span class="item-quantity">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="assets\images\products\boat518-1.png" alt="boAt Headsets Max">
+                        <div class="item-details">
+                            <div class="item-header">
+                                <h4>boAt Headsets Max</h4>
+                                <button class="delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <p><span class="price">₹9,999</span> <span class="original-price">₹10,999</span></p>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span class="item-quantity">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-summary">
+                <h3>Order Summary (<span id="item-count">4</span> items)</h3>
+                <p>Original Price <span id="original-price">₹22,978</span></p>
+                <p class="discount">Discount <span id="discount-amount">- ₹10,132</span></p>
+                <p>Delivery <span>Free</span></p>
+                <hr>
+                <h2>Total Price <span id="total-price">₹12,846</span></h2>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>TechShop</h3>
+                <p>Your one-stop shop for all tech gadgets and accessories.</p>
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="E-mail Address">
+                <button>Subscribe</button>
+            </div>
+            <div class="footer-links">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Cancel Order</a></li>
+                    <li><a href="#">Return Order</a></li>
+                    <li><a href="#">Warranty Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="./home.html">Affiliates</a></li>
+                    <li><a href="./product.html">Service Centres</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 TechShop. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
